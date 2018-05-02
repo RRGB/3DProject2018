@@ -1,0 +1,12 @@
+Ideas for snapping: 
+
+/*
+	checks the distance between two of the objects. if within range, merges them together
+  Needs to change how it snaps together, bc as written it looks like it will merge them when they are on top of each other
+  Also, idk where to implement this idea
+*/
+
+if((Math.abs(objects[0].positionX - objects[1].positionX) < 1000) && (Math.abs(objects[0].positionY - objects[1].positionY) < 1000)) {
+                    objects[0].positionX = objects[1].positionY;
+                    objects[0].union(objects[1]);
+                }
